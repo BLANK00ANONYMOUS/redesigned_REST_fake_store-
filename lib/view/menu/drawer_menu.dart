@@ -112,25 +112,6 @@ class _DrawerMenuState extends State<DrawerMenu> {
                               color: Colors.black),
                         ),
                       ),
-                      // InkWell(
-                      //   onTap: () {
-                      //     showAboutDialog(
-                      //       context: context,
-                      //       applicationIcon: SmallAppIcon(),
-                      //       applicationVersion: '1.0.0+1',
-                      //       applicationLegalese: 'Show me',
-                      //     );
-                      //   },
-                      //   child: ListTile(
-                      //     leading: Icon(Icons.info, color: Colors.black),
-                      //     title: TextBuilder(
-                      //       text: "About App",
-                      //       fontSize: 20.0,
-                      //       fontWeight: FontWeight.bold,
-                      //       color: Colors.black,
-                      //     ),
-                      //   ),
-                      // ),
                     ],
                   ),
                 ),
@@ -153,7 +134,8 @@ class _DrawerMenuState extends State<DrawerMenu> {
   }
 
   _launchURL() async {
-    const url = "https://github.com/BLANK00ANONYMOUS";
+    const url =
+        "https://github.com/BLANK00ANONYMOUS/redesigned_REST_fake_store-";
     await canLaunch(url) ? await launch(url) : throw 'Could not launch $url';
   }
 
